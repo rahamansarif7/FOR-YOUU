@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Star, Sparkles, ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react';
 import { playChime, playGlissando } from '../../utils/audio';
 import { particleEngine } from '../../utils/particles';
+import nightStarGardenImg from '../../assets/images/cute_night_star_garden_1793875675679.jpg';
 
 interface Level6StarCollectionProps {
   personName: string;
@@ -147,7 +148,7 @@ export const Level6StarCollection: React.FC<Level6StarCollectionProps> = ({
       <div className="relative rounded-3xl overflow-hidden border border-purple-400/30 shadow-2xl min-h-[480px] sm:min-h-[560px]">
         {/* Background Image of the cute dreamy night garden */}
         <img
-          src="/src/assets/images/cute_night_star_garden_1793875675679.jpg"
+          src={nightStarGardenImg}
           alt="Dreamy cute storybook night sky garden with smiling moon and fairies"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover min-h-[480px] sm:min-h-[560px]"

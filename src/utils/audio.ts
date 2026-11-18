@@ -215,12 +215,14 @@ export interface MusicTrack {
   unavailable?: boolean;
 }
 
+const BASE = import.meta.env.BASE_URL || './';
+
 export const DEFAULT_TRACKS: MusicTrack[] = [
   {
     id: 'maula-mere-maula',
     title: 'Maula Mere Maula',
     artist: 'Garden Soundtrack',
-    audioUrl: '/music/maula-mere-maula.mp3',
+    audioUrl: `${BASE}music/maula-mere-maula.mp3`,
     duration: 0,
     coverEmoji: '🌷',
   },
@@ -228,7 +230,7 @@ export const DEFAULT_TRACKS: MusicTrack[] = [
     id: 'piya-aaye-na',
     title: 'Piya Aaye Na',
     artist: 'Garden Soundtrack',
-    audioUrl: '/music/piya-aaye-na.mp3',
+    audioUrl: `${BASE}music/piya-aaye-na.mp3`,
     duration: 0,
     coverEmoji: '🦋',
   },
@@ -236,7 +238,7 @@ export const DEFAULT_TRACKS: MusicTrack[] = [
     id: 'ishq-mubarak',
     title: 'Ishq Mubarak',
     artist: 'Garden Soundtrack',
-    audioUrl: '/music/ishq-mubarak.mp3',
+    audioUrl: `${BASE}music/ishq-mubarak.mp3`,
     duration: 0,
     coverEmoji: '🌸',
   },
@@ -244,7 +246,7 @@ export const DEFAULT_TRACKS: MusicTrack[] = [
     id: 'hasi',
     title: 'Hasi',
     artist: 'Garden Soundtrack',
-    audioUrl: '/music/hasi.mp3',
+    audioUrl: `${BASE}music/hasi.mp3`,
     duration: 0,
     coverEmoji: '✨',
   },

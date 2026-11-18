@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, ArrowRight, KeyRound } from 'lucide-react';
 import { playChime, playGlissando, playFlutter } from '../../utils/audio';
 import { particleEngine } from '../../utils/particles';
+import gardenGateImg from '../../assets/images/garden_gate_tulips_1793872769082.jpg';
 
 interface Level2GateProps {
   personName: string;
@@ -28,7 +29,7 @@ export const Level2Gate: React.FC<Level2GateProps> = ({ personName, onNext }) =>
       {/* Background Gate Setting */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/garden_gate_tulips_1793872769082.jpg"
+          src={gardenGateImg}
           alt="Magical garden gate with blooming tulips"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover opacity-60 scale-105 transition-transform duration-1000"
