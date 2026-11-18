@@ -1,0 +1,6 @@
+{
+  "name": "The Tulip & Butterfly Garden: Level 20 Birthday Adventure",
+  "description": "An enchanting, interactive 20th birthday adventure game through a magical tulip and butterfly garden featuring 10 interactive levels, mini-games, and a personal music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
